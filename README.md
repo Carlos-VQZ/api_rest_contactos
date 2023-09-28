@@ -31,3 +31,103 @@ CREATE TABLE IF NOT EXISTS contactos (
     telefono VARCHAR(13) NOT NULL
 );
 
+## 4. Diseño del Endpoint
+Diseño del end para el recurso contatos
+
+### 4.1 Listar todos los contactos
+Endpoint para obtener todos los contactos
+
+## 4.2 Get incial
+|No.|Propiedad|Detalle|
+|--|--|--|
+|1|Description|--|
+|2|Summary|--|
+|3|Method|--|
+|4|Endpoint|--|
+|5|Query Param|--|
+|6|Path Param|--|
+|7|Data|--|
+|8|Version|--|
+|9|Status Code|--|
+|10|Response type|--|
+|11|Response|--|
+|12|Curl|--|
+|13|Status Code (error)|--|
+|14|Response Type (error)|--|
+|15|Response (error)|--|
+
+## 4.3 GET
+|No.|Propiedad|Detalle|
+|--|--|--|
+|1|Description|--|
+|2|Summary|--|
+|3|Method|--|
+|4|Endpoint|--|
+|5|Query Param|--|
+|6|Path Param|--|
+|7|Data|--|
+|8|Version|--|
+|9|Status Code|--|
+|10|Response type|--|
+|11|Response|--|
+|12|Curl|--|
+|13|Status Code (error)|--|
+|14|Response Type (error)|--|
+|15|Response (error)|--|
+
+## 4.4 POST
+|No.|Propiedad|Detalle|
+|--|--|--|
+|1|Description|--|
+|2|Summary|--|
+|3|Method|--|
+|4|Endpoint|--|
+|5|Query Param|--|
+|6|Path Param|--|
+|7|Data|--|
+|8|Version|--|
+|9|Status Code|--|
+|10|Response type|--|
+|11|Response|--|
+|12|Curl|--|
+|13|Status Code (error)|--|
+|14|Response Type (error)|--|
+|15|Response (error)|--|
+
+## 4.5 PUT
+|No.|Propiedad|Detalle|
+|--|--|--|
+|1|Description|--|
+|2|Summary|--|
+|3|Method|--|
+|4|Endpoint|--|
+|5|Query Param|--|
+|6|Path Param|--|
+|7|Data|--|
+|8|Version|--|
+|9|Status Code|--|
+|10|Response type|--|
+|11|Response|--|
+|12|Curl|--|
+|13|Status Code (error)|--|
+|14|Response Type (error)|--|
+|15|Response (error)|--|
+
+## 4.5 Delete
+|No.|Propiedad|Detalle|
+|--|--|--|
+|1|Description|--|
+|2|Summary|--|
+|3|Method|--|
+|4|Endpoint|--|
+|5|Query Param|--|
+|6|Path Param|--|
+|7|Data|--|
+|8|Version|--|
+|9|Status Code|--|
+|10|Response type|--|
+|11|Response|--|
+|12|Curl|--|
+|13|Status Code (error)|--|
+|14|Response Type (error)|--|
+|15|Response (error)|--|
