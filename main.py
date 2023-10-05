@@ -48,24 +48,25 @@ class datos(BaseModel):
     correo: str
 
 @app.post("/v1/contactos")
-async def root(datos: datos):
-    datos = []
-    with open("contactos.csv", "a",newline = '') as file:
-        nombre = input("Nombre: ")
-        correo = input("Correo: ")
-        datos.append([nombre, correo])
-        escribir_csv = csv.writer(file)
-            
-        for fila in datos:
-            escribir_csv.writerow(fila)
+async def root(datos: dict):
+    # Suponemos que 'datos' es un diccionario con 'nombre' y 'correo' como claves
+    nombre = datos.get("nombre")
+    correo = datos.get("correo")
 
+    if nombre and correo:
+        with open("contactos.csv", "a", newline='') as file:
+            escribir_csv = csv.writer(file)
+            escribir_csv.writerow([nombre, correo])
+
+        # Opcionalmente, si deseas convertir los datos a JSON y guardarlos en un archivo .json
         with open("contactos.csv", "r") as file:
             contactos = list(csv.DictReader(file))
 
-            json_data = json.dumps(contactos)
+        json_data = json.dumps(contactos)
+
         with open("contactos.json", "w") as json_file:
             json_file.write(json_data)
-    
-        response = json_data
-        return response
 
+        return {"message": "Datos agregados correctamente"}
+    else:
+        return {"error": "Falta el nombre y/o correo en los datos enviados"}
